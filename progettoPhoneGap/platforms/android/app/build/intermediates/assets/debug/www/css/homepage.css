@@ -1,0 +1,138 @@
+.username {
+    font-weight: bold;
+}
+
+.div-button {
+    height: 100%;
+    float: left;
+    width: 33.33%;
+}
+
+.btn {
+    width: 60%;
+}
+
+.body-container {
+    padding-bottom: 25%;
+}
+
+/* ARTICLE */
+.article {
+    color: white;
+    background-color: #388E3C;
+    margin: 3%;
+    padding: 3%;
+    height: 100%;
+}
+
+.article h4 {
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.info-article {
+    text-align: left;
+    float: left;
+    width: 65%;
+    height: 100%;
+}
+
+.button-article {
+    text-align: right;
+    height: 100%;
+    float: right;
+    width: 30%;
+    margin-right: 3%;
+}
+
+.btn-edit {
+    width: 90%;
+    font-size: 80%;
+    margin-bottom: 15%;
+    border: 1px solid rgb(255, 115, 0);
+    background-color: orange;
+    border-radius: 5%;
+}
+
+.btn-delete {
+    width: 90%;
+    font-size: 80%;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(230, 27, 0);
+    border-radius: 5%;
+}
+
+
+#total {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 10%;
+    background-color: #66BB6A;
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+}
+
+#total h4 {
+    width: 100%;
+    font-size: 120%;
+}
+
+#totale {
+    margin-left: 3%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px)  { /* iPad/iPad Pro */
+    .template-icon {
+        font-size: 250%;
+    }
+
+    .text-icon {
+        font-size: 150%;
+    }
+
+    .div-cart {
+        font-size: 150%;
+        margin-top: 15%;
+        margin-bottom: 15%;
+        overflow-y: scroll;
+    }
+}
+/* iphone X */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+
+    .btn {
+        width: 70%;
+    }
+
+    #total h4 {
+        font-size: 110%;
+    }
+}
+
+/* iphone 6, 6s, 7, 8 */
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-height: 667px)
+    and (-webkit-device-pixel-ratio: 2) {
+    
+    .btn {
+        width: 60%;
+    }
+
+    #total h4 {
+        font-size: 120%;
+    }
+}
+
+/* iphone 6+, 6s+, 7+, 8+ */
+@media only screen 
+    and (min-device-width: 414px)
+    and (max-device-height: 736px)
+    and (-webkit-device-pixel-ratio: 3) {
+}

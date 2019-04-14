@@ -1,0 +1,58 @@
+.body-container {
+    bottom: 0%;
+    height: 90%;
+}
+
+input[type=search] {
+    width: 80%;
+    border: 2px solid #1B5E20;
+    height: 6%;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    padding-left: 3%; 
+}
+
+#list-article {
+    margin-top: 10%;
+}
+
+.article {
+    color: white;
+    background-color: #388E3C;
+    margin: 3%;
+    padding: 3%;
+    height: 100%;
+    border-radius: 1%;
+}
+
+.info-article {
+    text-align: left;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.button-article {
+    text-align: right;
+    height: 100%;
+    float: right;
+    width: 30%;
+    margin-right: 3%;
+}
+
+.article h4 {
+    margin: 0;
+}
+
+.after-div {
+    clear: both;
+}
+
+.btn {
+    width: 90%;
+    font-size: 80%;
+    border-radius: 5%;
+    border: 1px solid rgb(255, 115, 0);
+    background-color: orange;
+}

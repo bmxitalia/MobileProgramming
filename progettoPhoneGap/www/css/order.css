@@ -1,0 +1,75 @@
+.order {
+    background-color: #388E3C;
+    border-radius: 1%;
+    margin: 3%;
+    padding: 3%;
+}
+
+.order-info {
+    color: white;
+    text-align: left;
+    float: left;
+    width: 65%;
+    height: 100%;
+}
+
+.order-code {
+    font-weight: bold;
+    display: block;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.order-data {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3%;
+}
+
+.order-button {
+    padding-top: 6%;
+    text-align: right;
+    height: 100%;
+    float: right;
+    width: 30%;
+    margin-right: 3%;
+}
+
+.order-button .btn-details {
+    width: 90%;
+    font-size: 80%;
+    border-radius: 5%;
+    border: 1px solid rgb(255, 115, 0);
+    background-color: orange;
+}
+
+.after-div {
+    clear: both;
+}
+
+#sort-label {
+    color: white;
+    margin-right: 2%;
+    font-size: 120%;
+}
+
+#sort-div {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 10%;
+    position: fixed;
+    width: 100%;
+}
+
+#sort {
+    font-size: 110%;
+    width: 25%;
+    border: 2px solid #1B5E20;
+    border-radius: 4%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/up-arrow.png) 96% / 15% no-repeat #eee;
+}

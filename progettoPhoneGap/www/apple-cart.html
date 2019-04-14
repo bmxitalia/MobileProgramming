@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/general.css">
+        <link rel="stylesheet" type="text/css" href="css/homepage.css">
+        <link href="css/montserrat.css" rel="stylesheet">
+        <title>Homepage</title>
+        <style>
+            .arrow-menu {
+                width: 12%;
+                position: absolute;
+                top: 2%;
+                left: 0;
+            }
+
+            .arrow-img {
+                width: 50%;
+            }
+
+            .nav-bg-fostrap {
+                z-index: -1;
+            }
+
+            .navbar-fostrap {
+                left: 9%;
+            }
+
+            #loading {
+                border: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="loading"></div>
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <div class="container">
+            <nav>
+                <div class="nav-fostrap" id="mobile-menu">
+                    <div>
+                        <h4>Utente</h4>
+                        <span id="user"></span><br/>
+                        <h4>Azienda</h4>
+                        <span id="company"></span>
+                        <hr>
+                        <ul>
+                            <li><a id="menu-cart">Carrello</a></li>
+                            <li><a id="menu-order">Ordini</a></li>
+                            <li><a id="menu-shop">Inventario</a></li>
+                            <li><a id="logout">Logout</a></li>
+                            <li><a id="tuto">Tutorial</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="arrow-menu">
+                        <img src="img/back.png" class="arrow-img">
+                    </div>
+                <div class="nav-bg-fostrap">
+                    <button class="navbar-fostrap"> <span></span> <span></span> <span></span> </button>
+                    <a class="title-mobile">Carrello</a>
+                </div>
+            </nav>
+            <div class="body-container">
+                <div id="articleList"><div class="article"><div class="info-article"><h4>HDD (Qta: x1)</h4><span>P. parziale: 54EUR</span></div><div class="button-article"><button class="btn-edit" onclick="editArticle(200180039000)">MODIFICA</button><br><button class="btn-delete" onclick="deleteArticle(200180039000)">ELIMINA</button></div><div style="clear:both;"></div></div><div class="article"><div class="info-article"><h4>Evidenziatore  (Qta: x1)</h4><span>P. parziale: 1.5EUR</span></div><div class="button-article"><button class="btn-edit" onclick="editArticle(8000825830419)">MODIFICA</button><br><button class="btn-delete" onclick="deleteArticle(8000825830419)">ELIMINA</button></div><div style="clear:both;"></div></div><div class="article"><div class="info-article"><h4>Diario scolastico (Qta: x1)</h4><span>P. parziale: 10EUR</span></div><div class="button-article"><button class="btn-edit" onclick="editArticle(8011410292475)">MODIFICA</button><br><button class="btn-delete" onclick="deleteArticle(8011410292475)">ELIMINA</button></div><div style="clear:both;"></div></div></div>
+
+                <div id="total" class="total-article">
+                    <h4 id="h4price"></h4>
+                </div>
+            </div>
+            <div class="banner-button">
+                <div class="div-button">
+                    <button id="btn-add" class="btn btn-add" onclick="scanner()">
+                        <img src="img/qr-code.png" class="img-icon">
+                        <span class="text-icon">Scan</span>
+                    </button>
+                </div>
+                <div class="div-button">
+                    <button id="btn-remove" class="btn btn-remove" onclick="deleteAll()">
+                        <img src="img/trashbin.png" class="img-icon">
+                        <span class="text-icon">Svuota</span>
+                    </button>
+                </div>
+                <div class="div-button">
+                    <button id="btn-send" class="btn btn-send" onclick="sendOrder()">
+                        <img src="img/send.png" class="img-icon">
+                        <span class="text-icon">Invia</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

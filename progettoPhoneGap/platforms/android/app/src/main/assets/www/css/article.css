@@ -1,0 +1,129 @@
+.body-container {
+    height: 70%;
+}
+
+#name {
+    width: 90%;
+    height: 30px;
+    color: white;
+    background: #388E3C;
+    resize: none;
+    border-radius: 2%;
+    border: none;
+    font-size: 120%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#quantity-container {
+    margin-top: 10%;
+}
+
+#field-container {
+    height: 30%;
+}
+
+#description {
+    width: 90%;
+    color: white;
+    background: #388E3C;
+    border-radius: 3%;
+    overflow-y: scroll;
+    border: none;
+    font-size: 110%;
+    text-align: left;
+    padding: 5%;
+    height: 70%;
+    margin: auto;
+}
+
+#quantity-container label {
+    text-align: center;
+    display: block;
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
+#quantity {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    width: 15%;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+#quantity-container button {
+    width: 10%;
+    height: 20%;
+    font-size: 100%;
+    border-radius: 8%;
+    background-color: #388E3C;
+}
+
+#price-container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 10%;
+    background-color: #66BB6A;
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+}
+
+#price-container h4 {
+    width: 100%;
+    font-size: 120%;
+}
+
+#price {
+    margin-left: 3%;
+}
+
+.div-button {
+    height: 100%;
+    float: left;
+    width: 50%;
+}
+
+.btn {
+    width: 40%;
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) { 
+    #quantity-container label {
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    .btn {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) { 
+    #quantity-container label {
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    .btn {
+        width: 45%;
+    }
+}
+
+
+/* iphone X */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+
+    .btn {
+        width: 50%;
+    }
+}

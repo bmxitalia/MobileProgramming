@@ -1,0 +1,50 @@
+{
+  "cordova-plugin-dialogs": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-dialogs"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "phonegap-plugin-barcodescanner": {
+    "source": {
+      "type": "registry",
+      "id": "phonegap-plugin-barcodescanner@8.0.1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1.3.3"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-appminimize": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-appminimize"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "com.telerik.plugins.nativepagetransitions": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/Telerik-Verified-Plugins/NativePageTransitions"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-network-information": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-network-information"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

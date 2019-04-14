@@ -1,0 +1,114 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    height: 100%;
+}
+
+#title {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background: #008b00;
+}
+
+#title h1 {
+    margin: 0%;
+    padding: 0%;
+    color: white;
+}
+
+#body-container {
+    bottom: 0%;
+    height: 90%;
+    overflow-y: scroll;
+}
+
+.div-tutorial {
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.div-tutorial h3 {
+    margin: 0%;
+    text-align: center;
+}
+
+.div-tutorial p {
+    font-size: 80%;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#body-container button {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    background-color: #008b00;
+    padding: 2%;
+    border: none;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+}
+
+#body-container button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5%;
+    height: 5%;
+    background: rgba(255, 255, 255, .5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+  
+@keyframes ripple {
+    0% {
+      transform: scale(0, 0);
+      opacity: 1;
+    }
+    20% {
+      transform: scale(25, 25);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(40, 40);
+    }
+}
+  
+#body-container button:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+.small-img {
+    background-color: black;
+    width: 7%;
+}
+
+.medium-img {
+    width: 80%;
+}
+
+#cart-buttons {
+}

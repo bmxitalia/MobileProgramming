@@ -1,0 +1,229 @@
+body {
+    background-color: #A5D6A7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.img-login {
+    width: 15%;
+}
+
+.span-welcome {
+    font-weight: bold;
+}
+
+.div-input {
+    margin: auto;
+    width: 40%;
+    margin-top: 2%;
+    background-color: #008b00;
+    border-radius: 6px;
+}
+
+.input-field {
+    background-color: #008b00;
+    width: 90%;
+    border: none;
+    padding: 3%;
+    margin: 3%;
+    box-sizing: border-box;
+    caret-color: white;
+    color: white;
+    outline: none;
+}
+
+#div-checkbox {
+    width: 80%;
+    padding-top: 2%; 
+    padding-bottom: 3%;
+    text-align: left;
+    color: white;
+    font-size: 100%;
+}
+
+#login-box {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 10%;
+    padding: 3%;
+    transform: scale(1.3);
+}
+
+#label-checkbox {
+    margin-left: 3%;
+    display: inline;
+}
+
+.btn-confirm {
+    color: white;
+    width: 40%;
+    border: none;
+    background-color: #008b00;
+    padding: 2%;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+}
+
+.div-submit {
+    margin-top: 5%;
+}
+
+.div-submit input.btn-confirm {
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    border: 0;
+    margin: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(189, 195, 199), rgba(0, 0, 0, 0));
+}
+  
+.div-submit button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5%;
+    height: 5%;
+    background: rgba(255, 255, 255, .5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+  
+@keyframes ripple {
+    0% {
+      transform: scale(0, 0);
+      opacity: 1;
+    }
+    20% {
+      transform: scale(25, 25);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(40, 40);
+    }
+}
+  
+.div-submit button:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 400px) { /* GALAXY S5, iPhone 5/6/7/8/SE */
+    .container {
+        margin-top: 28%;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 110%;  
+    }
+
+    .img-login {
+        width: 50%;
+        margin-bottom: 12%;
+    }
+
+    .div-input {
+        width: 80%;
+        margin-top: 10%
+    }
+
+    .btn-confirm {
+        width: 80%;
+        padding: 5%;
+    }
+
+    #label-checkbox {
+        font-size: 90%;
+    }
+}
+  
+@media screen and (min-width: 401px) and (max-width: 768px)  { 
+    .container {
+        margin-top: 30%;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 150%;  
+    }
+
+    input.btn-confirm {
+        font-size: 150%;
+    }
+
+    .span-welcome {
+        font-size: 150%;
+    }
+
+    .span-text {
+        font-size: 150%;
+    }
+
+    .img-login {
+        width: 40%;
+        margin-bottom: 15%;
+    }
+
+    .div-input {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    .btn-confirm {
+        font-size: 110%;
+        width: 80%;
+        padding: 5%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px)  { /* iPad/iPad Pro */
+    .container {
+        margin-top: 20%;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 180%;  
+    }
+
+    input.btn-confirm {
+        font-size: 180%;
+    }
+
+    .span-welcome {
+        font-size: 180%;
+    }
+
+    .span-text {
+        font-size: 180%;
+    }
+
+    .img-login {
+        width: 35%;
+        margin-bottom: 12%;
+    }
+
+    .div-input {
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    .btn-confirm {
+        width: 80%;
+        padding: 5%;
+    }
+}

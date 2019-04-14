@@ -1,0 +1,39 @@
+.body-container {
+    bottom: 0%;
+    height: 90%;
+    padding-bottom: 15%;
+}
+
+.article {
+    color: white;
+    background-color: #388E3C;
+    margin: 3%;
+    padding: 3%;
+    height: 100%;
+    border-radius: 2%;
+}
+
+#total {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 10%;
+    background-color: #66BB6A;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#total h4 {
+    width: 100%;
+    font-size: 120%;
+}
+
+#totale {
+    margin-left: 3%;
+}
+
+.title-mobile {
+    width: 50%;
+}

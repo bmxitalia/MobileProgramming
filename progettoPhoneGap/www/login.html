@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <link href="css/montserrat.css" rel="stylesheet">
+        <title>Login</title>
+    </head>
+    <body>
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <div class="container">
+            <div>   
+                <figure>
+                    <img class="img-login" src="img/user.png" alt="Immagine di login">
+                </figure>
+            </div>
+            <div>
+                <div>
+                    <span class="span-welcome">BENVENUTO!</span> <br>
+                    <span class="span-text">Inserisci i tuoi dati per iniziare ad ordinare</span>
+                </div>
+                    <div>
+                        <div class="div-input">
+                            <div class="div-user">
+                                <input type="text" id="input-user" name="input-user" class="input-field" placeholder="Username">
+                            </div>
+                            <hr>
+                            <div class="div-password">
+                                <input type="password" id="input-password" name="input-password" class="input-field" placeholder="Password">
+                            </div>
+                            <div id="div-checkbox">
+                                <input type="checkbox" id="login-box"><label id="label-checkbox">Resta collegato</label>
+                            </div>
+                        </div>
+
+                        <div class="div-submit">
+                            <button id="submit-btn" class="btn-confirm" onclick="tryLogin()">LOGIN</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <script src="js/login.js" type="text/javascript"></script>
+    </body>
+</html>
